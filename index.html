@@ -9,10 +9,6 @@
                text-align:center;
                font-weight:bold;
                color:white;
-               
-               display:flex;
-               align-items:center;
-               justify-center:center;
             
                margin:0;
                padding:0;
@@ -22,6 +18,8 @@
                background-size:cover;
                background-position: center;
             }
+
+            #bouton { position: relative; top: 50vh; }
             
             .pyro {
               position: absolute;
@@ -35,10 +33,10 @@
   height: 5px;
   border-radius: 50%;
   box-shadow: 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff;
-  //-moz-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
-  //-webkit-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
-  //-o-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
-  //-ms-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+  -moz-animation: 1s bang ease-out 5 backwards, 1s gravity ease-in 5 backwards, 5s position linear 5 backwards;
+  -webkit-animation: 1s bang ease-out 5 backwards, 1s gravity ease-in 5 backwards, 5s position linear 5 backwards;
+  -o-animation: 1s bang ease-out 5 backwards, 1s gravity ease-in 5 backwards, 5s position linear 5 backwards;
+  -ms-animation: 1s bang ease-out 5 backwards, 1s gravity ease-in 5 backwards, 5s position linear 5 backwards;
   animation: 1s bang ease-out 5 backwards, 1s gravity ease-in 5 backwards, 5s position linear 5 backwards;
 }
             
@@ -251,7 +249,7 @@ window.addEventListener("load", (e) => {
         </script>
     </head>
     <body>
-        <div id="bouton" style="width:100%">
+        <div id="bouton">
           🎁 Clique pour dévoiler ton cadeau 🎁
         </div>
         
